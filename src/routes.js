@@ -2,6 +2,7 @@ import { Router } from 'express';
 
 import UserController from './app/controllers/UserController';
 import SessionController from './app/controllers/SessionController';
+import CreateDocumentController from './app/controllers/CreateDocumentController';
 
 import authMiddleware from './app/middlewares/auth';
 
@@ -12,7 +13,7 @@ routes.post('/sessions', SessionController.store);
 
 routes.use(authMiddleware);
 
-//routes.post('/createDocument', SessionController.store);
+routes.post('/createDocument', CreateDocumentController.store);
 
 
 export default routes;
