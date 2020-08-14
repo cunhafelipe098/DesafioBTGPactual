@@ -20,6 +20,7 @@ class SessionController {
     const user = await User.findOne({ where: { cpf } })
 
     if (!user) {
+     
       return res.status(401).json({ error: 'User not found' })
     }
 

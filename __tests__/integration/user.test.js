@@ -14,8 +14,8 @@ describe('User', () => {
       .post('/users')
       .send({
           name: 'Felipe Cunha',
-          cpf: '10617797698',
-          rg: '527843680',
+          cpf: '10617797692',
+          rg: '527843682',
           password: 'segredo123'
       });
 
