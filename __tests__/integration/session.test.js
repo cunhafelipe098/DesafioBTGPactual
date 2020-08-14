@@ -72,7 +72,5 @@ describe('Session', () => {
 
       expect(response.status).toBe(401);
   });
-
-
   
 });

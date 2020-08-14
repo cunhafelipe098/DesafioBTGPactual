@@ -4,16 +4,14 @@ import  fs from 'fs';
 class CreateDocumentController {
   async store (req, res) {    
 
-    fs.writeFile("C:\\Pasta\\meuarquivo.txt", JSON.stringify(req.body), function(erro) {
+    fs.writeFile("C:\\file.txt", JSON.stringify(req.body) ,function(erro) {
 
       if(erro) {
           throw erro;
       }
+    });
 
-      console.log("Arquivo salvo");
-    }); 
-
-    return res.status(200).json({ success: 'created file in ' })
+    return res.status(200).json({ success: 'created file in C:\\file.txt' })
   }
 }
 
