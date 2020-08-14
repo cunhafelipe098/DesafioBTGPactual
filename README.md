@@ -23,15 +23,29 @@ Docker
 
 ### 🔧 Instalação
 
-instalação
+Crie um contêiner a partir de uma imagem postgres
 
 ```
-xxx
+$ docker run --name databaseBTG -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres:11
+
+```
+OBS: para os testes já sendo usado o sqlite automaticamente.
+
+Clone o repositório, navegue até o diretório raiz do projeto.
+
+Rodar os testes:
+```
+$ yarn test 
+```
+Rodar o miniProjeto:
+
+```
+$ yarn dev 
 ```
 
 ## 📦 Decisões de desenvolvimento
 
-Decisões tomadas
+Devido ao escopo do projeto foi escolhido a arquitetura MVC e utilizado o Postman para testar os endpoints.
 
 ## 🛠️ Construído com
 
@@ -42,6 +56,10 @@ Decisões tomadas
 * [JWT](https://jwt.io/) - Autenticação por JWT
 * [Postgresql](https://www.postgresql.org/) - Banco de dados utilizado
 * [Docker](https://www.docker.com/) - Utilizado para isolar o BD
+
+## Postman
+
+https://www.getpostman.com/collections/ab3a8e5b4d52db99bff7
 
 ## ✒️ Autor
 
