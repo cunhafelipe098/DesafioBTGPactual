@@ -12,6 +12,7 @@ routes.post('/sessions', SessionController.store);
 
 routes.use(authMiddleware);
 
+//routes.post('/createDocument', SessionController.store);
 
 
 export default routes;
